@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Caveat:wght@400..700&family=Yuji+Mai&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(102, 102, 245);
+    overflow: hidden;
+}
+
+.container {
+    width: 45%;
+    margin: 32px auto;
+}
+
+.header {
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    font-family: "Agu Display", serif;
+    color: aliceblue;
+    position: relative;
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+   0% {top: -250px;}
+   100% {top: 100px;}
+}
+
+.main {
+    font-family: "Yuji Mai", serif;
+    color: rgb(255, 255, 255);
+}
+
+.text-right {
+    position: relative;
+    margin-top: 32px;
+    text-align: right;
+    animation: textright;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textright {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.text-left {
+    position: relative;
+    animation: textleft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textleft {
+    0% {left: -1000px;}
+    85% {left: 50px}
+    100% {left: 0;}
+}
+
+.footer {
+    text-align: center;
+}
+
+.btn {
+    opacity: 0;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: "Yuji Mai", serif;
+    text-transform: uppercase;
+    border: 2px solid white;
+    animation: anibtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anibtn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
